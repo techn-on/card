@@ -42,8 +42,8 @@ class _SetPageState extends State<SetPage> {
 
   void incrementCounter() {
     setState(() {
-      cardcount++;
-      timecount = timecount + 2;
+      cardcount = cardcount + 5;
+      timecount = timecount + 10;
     });
   }
 
@@ -52,8 +52,8 @@ class _SetPageState extends State<SetPage> {
       if (cardcount == 0) {
         cardcount = 0;
       } else {
-        cardcount--;
-        timecount = timecount + 2;
+        cardcount = cardcount - 5;
+        timecount = timecount + 10;
       }
     });
   }
